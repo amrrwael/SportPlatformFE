@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Hub</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/room-styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html" style="cursor: pointer;">Sport Hub</a>
+      </div>
+      <nav id="header-nav">
+        <!-- Links will be dynamically added here -->
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Welcome to Sport Hub</h1>
+      <p>Your ultimate destination for sports and activities.</p>
+
+      <!-- Create Room Button -->
+      <div class="action-buttons">
+        <button id="create-room-button" class="button-primary">
+          Create Room
+        </button>
+      </div>
+
+      <!-- Filter Section -->
+      <div id="filter-section">
+        <h3>Filter Rooms</h3>
+        <form id="filter-form">
+          <div class="filter-group">
+            <label for="city">City:</label>
+            <select id="city" name="city">
+              <option value="">All</option>
+              <option value="Tomsk">Tomsk</option>
+              <option value="Novosibirsk">Novosibirsk</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sportId">Sport:</label>
+            <select id="sportId" name="sportId">
+              <option value="">All</option>
+              <!-- Sports will be dynamically added here -->
+            </select>
+          </div>
+
+          <button type="submit" class="button-secondary">Apply Filters</button>
+        </form>
+      </div>
+
+      <!-- Room List Section -->
+      <div id="room-list">
+        <!-- Rooms will be dynamically added here -->
+      </div>
+    </div>
+    <script src="../js/header.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
